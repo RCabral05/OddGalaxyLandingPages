@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Odd Galaxy</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navlogo">
+            <h1 class="title">ODD GALAXY</h1>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">HOME</a>
+            <a href="#news">ROADMAP</a>
+            <a href="#contact">TAKE THE LEAP</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="socialmedia">
+            <img src="Images/twitter.png" class="twitter">
+            <img src="Images/discord.png" class="discord">
+            <img src="Images/opensea.png" class="opensea">
+        </div>
+        <div class="main">
+            <img class="logo" src="Images/logo_resized.png" alt="Logo">
+            <div class="image-text">
+                <h1 class="title-large">ODD GALAXY</h1>
+                <a class="wallet-connect">CONNECT WALLET</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } 
+        else {
+            x.className = "topnav";
+        }
+    }
+</script>
