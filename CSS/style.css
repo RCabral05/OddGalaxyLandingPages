@@ -1,5 +1,15 @@
 *{
-    background-image: url(../Images/bg.png);
+    background-image: url(../Images/bg.png);   
+}
+
+html, body{
+    margin: 0%;
+    padding:0%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
 }
 /*------NAVBAR------*/
 .title{
@@ -55,29 +65,7 @@
     display: none;
   }
   
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  @media screen and (max-width: 900px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 900px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: center;
-    }
-  }
+
 
 .socialmedia{
     /*border: 2px solid blue;*/
@@ -139,3 +127,368 @@
     font-family: fantasy;
     font-size: 25px;
 }
+
+/*------BODY END------*/
+/*------*/
+/*------FAQ------*/
+
+.faq-container{
+    float: left;
+    width: 100%;
+    background-image: none;
+    margin-top: 100px;
+}
+.faq-title{
+    background-image: none;
+}
+.faq{
+    text-align: center;
+    color: white;
+    background-image: none;
+    font-family: fantasy;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.faq-collapse{
+    background-image: none;
+}
+.collapsible {
+    background-image: none;
+    color: #01ffff;
+    cursor: pointer;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top:30px;
+    background: rgba(197, 206, 216, .05);
+    padding-left:30px;
+    padding-right: 30px;
+    border-top: 1px solid #01ffff;
+    /*border:rgba(197, 206, 216, .05) 2px solid;*/
+  }
+
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-image: none;
+    background-color:transparent;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    border-bottom: 1px solid #01ffff;
+
+  }
+
+  p{
+      background-image: none;
+      font-size: 20px;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    padding-top: 7px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  
+
+
+
+.roadmap-container{
+      float: left;
+      width: 100%;
+      margin-top: 100px;
+      background-image: none;
+      /*border: 2px solid red;*/
+
+}
+.roadmap{
+    background-image: none;
+    text-align: center;
+    color: white;
+    font-family: fantasy;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.roadmap-title{
+    background-image: none;
+}
+.roadmap-collapse{
+    background-image: none;
+    float: left;
+    /*border: 2px solid white;*/
+    overflow: hidden;
+    width: 50%;
+}
+.collapsible-rm {
+    background-image: none;
+    color: #FF9052;
+    cursor: pointer;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-top:30px;
+    background: rgba(197, 206, 216, .05);
+    padding-left:30px;
+    padding-right: 30px;
+    border-top: 1px solid #FF9052;
+    /*border:rgba(197, 206, 216, .05) 2px solid;*/
+  }
+
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content-rm {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-image: none;
+    background-color:transparent;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    border-bottom: 1px solid #FF9052;
+    width: 73%;
+
+  }
+
+  p{
+      background-image: none;
+      font-size: 20px;
+  }
+
+  .collapsible-rm:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    padding-top: 7px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .land-image {
+    margin-left: 53%;
+    margin-top: 1%;
+    width: 45%;
+    /*position: absolute;
+    top: 205%;
+    left: 19%;
+    transform: translate(-50%, -50%);*/
+    background-image: none;
+    text-align: center;
+  }
+
+  .land{  
+    text-align: center;
+    width: 100%;
+    background-image: none;
+    margin: auto;
+  }
+@media screen and (max-width: 1600px) {
+    .land {
+        margin-top: 1%;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .land {
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .land {
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .land {
+        margin-top: 15%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .land {
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .land {
+        margin-top: 25%;
+    }
+    .title{
+        font-size: 27px;
+    }
+    .topnav a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .land {
+        margin-top: 30%;
+    }
+    .title{
+        font-size: 27px;
+    }
+    .topnav a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 905px) {
+    .title{
+        font-size: 26px;
+    }
+    .topnav a{
+        font-size: 14px;
+    }
+}
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+@media screen and (max-width: 900px) {
+    .land-image{
+        float: left;
+        margin:0;
+        width: 100%;
+    }
+
+    .roadmap-collapse{
+        background-image: none;
+        float: left;
+        /*border: 2px solid white;*/
+        overflow: hidden;
+        width: 80%;
+    }
+    .collapsible-rm {
+        background-image: none;
+        color: #FF9052;
+        cursor: pointer;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        width: 80%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 25px;
+        margin-left: 20%;
+        margin-top:30px;
+        background: rgba(197, 206, 216, .05);
+        padding-left:30px;
+        padding-right: 30px;
+        border-top: 1px solid #FF9052;
+        /*border:rgba(197, 206, 216, .05) 2px solid;*/
+      }
+    
+      
+      /* Style the collapsible content. Note: hidden by default */
+      .content-rm {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-image: none;
+        background-color:transparent;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: white;
+        border-bottom: 1px solid #FF9052;
+        width: 73%;
+    
+      }
+}
+
+@media screen and (max-width: 825px) {
+    .title-large{
+        font-size: 35px;
+    }
+    .wallet-connect{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .title{
+        font-size: 26px;
+    }
+    .topnav a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .title{
+        font-size: 26px;
+    }
+    .topnav a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .title{
+        font-size: 25px;
+        padding-top: 8px;
+    }
+    .topnav a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .title{
+        font-size: 18px;
+        padding-top: 13px;
+    }
+}
+
+.leap-container{
+    float: left;
+    margin-top: 100px;
+    background-image: none;
+}
+
+.leap-image{
+    width: 100%;
+    background-image: none;
+}
+
