@@ -596,12 +596,59 @@ p{
     }
     .logo{
         padding-top: 20px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .title-large{
         font-size: 25px;
     }
     .wallet-connect{
-        font-size: 10px;
+        font-size: 13px;
+    }
+    .faq, .roadmap{
+        font-size: 20px;
+    }
+    .collapsible-rm{
+        margin: 0%;
+        margin-left: 10%;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .collapsible{
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .roadmap-collapse{
+        margin: 0%;
+        width: 100%;
+        margin-right: 10%;
+    }
+    .content-rm{
+        margin: 0%;
+        width: 72.6%;
+        margin-left: 10%;
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-image: none;
+        background-color:transparent;
+        color: white;
+        border-bottom: 1px solid #FF9052;
+        text-align: left;
+    }
+    .collapsible, .collapsible-rm{
+        font-size: 18px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .land-image{
+        float: left;
+        margin:0;
+        margin-top:10px;
+        width: 100%;
     }
 }
 
