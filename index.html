@@ -6,18 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <title>Odd Galaxy</title>
+    <style>
+        p{
+            font-family: Aclonica;
+            line-height: 1.6;
+        }
+        .wallet-connect{
+            font-family: Aclonica;
+        }
+    </style>
 </head>
 <body>
+    <!--INDEX PAGE-->
     <div class="container">
         <div class="navlogo">
-            <h1 class="title">ODD GALAXY</h1>
+            <h1 class="title" style="font-family: Aclonica;">ODD GALAXY</h1>
         </div>
         <div class="topnav" id="myTopnav">
-            <a href="#home">FAQ</a>
-            <a href="#news">ROADMAP</a>
-            <a href="#contact">TAKE THE LEAP</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="#FAQ" style="font-family: Aclonica;">FAQ</a>
+            <a href="#ROADMAP" style="font-family: Aclonica;">ROADMAP</a>
+            <a href="#TAKE THE LEAP" style="font-family: Aclonica;">TAKE THE LEAP</a>
+            <a href="javascript:void(0);" class="icon" onclick="nav_collapse()">
               <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -29,70 +42,72 @@
         <div class="main">
             <img class="logo" src="Images/logo_resized.png" alt="Logo">
             <div class="image-text">
-                <h1 class="title-large">ODD GALAXY</h1>
-                <a class="wallet-connect">CONNECT WALLET</a>
+                <h1 class="title-large" style="font-family: Aclonica;">ODD GALAXY</h1>
+                <button class="wallet-connect" onclick="connectWallet()" astyle="font-family: Aclonica;">CONNECT WALLET</a>
             </div>
         </div>
     </div>
 
+    <!--FAQ PAGE-->
     <div class="faq-container">
         <div class="faq-title">
-            <h1 class="faq">FAQ</h1>
+            <h1 class="faq" style="font-family: Aclonica;">FAQ</h1>
         </div>
         <div class="faq-collapse">
-            <button type="button" class="collapsible">What is Odd Galaxy?</button>
+            <button type="button" class="collapsible" style="font-family: Aclonica;">WHAT IS ODD GALAXY?</button>
             <div class="content">
                 <p>Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible">Open Collapsible</button>
+            <button type="button" class="collapsible" style="font-family: Aclonica;">HOW MUCH IS MINT?</button>
             <div class="content">
                 <p>Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible">Open Collapsible</button>
+            <button type="button" class="collapsible" style="font-family: Aclonica;">WHAT IS THE PORTAL?</button>
             <div class="content">
                 <p>Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible">What is Odd Galaxy?</button>
+            <button type="button" class="collapsible" style="font-family: Aclonica;">WHAT IS $ODD?</button>
             <div class="content">
                 <p>Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible">Open Collapsible</button>
+            <button type="button" class="collapsible" style="font-family: Aclonica;">HOW MUCH $ODD DO I GENERATE DAILY?</button>
             <div class="content">
                 <p>Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible">Open Collapsible</button>
+            <button type="button" class="collapsible" style="font-family: Aclonica;">WHERE CAN I CONTACT THE TEAM?</button>
             <div class="content">
                 <p>Lorem ipsum...</p>
             </div>
         </div>
     </div>
 
+    <!--ROADMAP PAGE-->
     <div class="roadmap-container">
         <div class="roadmap-title">
-            <h1 class="roadmap">ROADMAP</h1>
+            <h1 class="roadmap" style="font-family: Aclonica;">ROADMAP</h1>
         </div>
         <div class="roadmap-collapse">
-            <button type="button" class="collapsible-rm">Phase 1</button>
+            <button type="button" class="collapsible-rm" style="font-family: Aclonica;">PHASE 1 - ODD GALAXY MINT OPENS</button>
             <div class="content-rm">
                 <p>Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible-rm">Phase 2</button>
+            <button type="button" class="collapsible-rm" style="font-family: Aclonica;">PHASE 2 - GENESIS REVEALS & PORTAL APPEARS</button>
             <div class="content-rm">
                 <p>Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible-rm">Phase 3</button>
+            <button type="button" class="collapsible-rm" style="font-family: Aclonica;">PHASE 3 - LAND UNLOCKS</button>
             <div class="content-rm">
                 <p>Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible-rm">Phase 4</button>
+            <button type="button" class="collapsible-rm" style="font-family: Aclonica;">PHASE 4 - GALAXY EXPLORATION</button>
             <div class="content-rm">
                 <p>Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible-rm">Phase 5</button>
+            <button type="button" class="collapsible-rm" style="font-family: Aclonica;">PHASE 5 - STAKE GENESIS & OBTAIN LOOT</button>
             <div class="content-rm">
                 <p>Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...</p>
             </div>
-            <button type="button" class="collapsible-rm">Phase 6</button>
+            <button type="button" class="collapsible-rm" style="font-family: Aclonica;">PHASE 6 - REDACTED</button>
             <div class="content-rm">
                 <p>Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...Lorem ipsum...</p>
             </div>
@@ -101,6 +116,8 @@
             <img class="land" src="Images/landcut.png" alt="Land">
         </div>
     </div>
+
+    <!--TAKE THE LEAP PAGE-->
     <div class="leap-container">
         <img class="leap-image" src="Images/labroom.jpeg">
     </div>
@@ -109,7 +126,7 @@
 
 <script>
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
+    function nav_collapse() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
@@ -124,29 +141,34 @@
     var i;
 
     for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-        content.style.display = "none";
-        } else {
-        content.style.display = "block";
-        }
-    });
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
     }
 
     var coll_rm = document.getElementsByClassName("collapsible-rm");
     var j;
 
     for (j = 0; j < coll_rm.length; j++) {
-    coll_rm[j].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content_rm = this.nextElementSibling;
-        if (content_rm.style.display === "block") {
-            content_rm.style.display = "none";
-        } else {
-            content_rm.style.display = "block";
-        }
-    });
+        coll_rm[j].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content_rm = this.nextElementSibling;
+            if (content_rm.style.display === "block") {
+                content_rm.style.display = "none";
+            } else {
+                content_rm.style.display = "block";
+            }
+        });
+    }
+
+    var con = document.getElementsByClassName("wallet-connect").addEventListener("click", connectWallet)
+    function connectWallet() {;
+
     }
 </script>

@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@keyframes title-color {
+    0%   { color:#01ffff; }
+    50%   { color: #FF9052; }
+    100% { color:#01ffff; }
+}
+
+@keyframes faq-color {
+    0%   { color:#01ffff;  }
+    50%   { color:#FF9052; }
+    100% { color:#01ffff;   }
+}
+
+@keyframes roadmap-color {
+    0%   { color:#FF9052; }
+    50%   { color: #01ffff; }
+    100% { color:#FF9052 }
+}
+
+@keyframes twitter-color {
+    0%   { background: url("Images/twitter_blue.png") no-repeat; }
+    50%   { background-image: url("/Images/twitter.png"); }
+    100% { background-image: url("/Images/twitter_blue.png"); }
+}
 *{
     background-image: url(../Images/bg.png);   
 }
@@ -13,7 +37,6 @@ html, body{
 }
 /*------NAVBAR------*/
 .title{
-    font-family:fantasy;
     font-weight: bolder;
     margin-top: 10px;
     margin-left: 5.5%;
@@ -25,8 +48,11 @@ html, body{
     padding-top: 6px;
     background-image: none;
     color: white;
+    letter-spacing: 2px;
 }
-
+.title:hover{
+    color:#01ffff;
+}
 /* Style the links inside the navigation bar */
 .topnav{
     /*border: 2px solid red;*/
@@ -39,31 +65,31 @@ html, body{
     
 }
 
-  /* Style the links inside the navigation bar */
-  .topnav a {
+/* Style the links inside the navigation bar */
+.topnav a {
     color: white;
     text-decoration: none;
     font-size: 20px;
     background-image: none;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: fantasy;
-  }
+    letter-spacing: 2px;
+}
 
  /* Change the color of links on hover */
- .topnav a:hover {
-    color: lightskyblue;
-  }
+.topnav a:hover {
+    color: #FF9052;
+}
   
   /* Add an active class to highlight the current page */
-  .topnav a.active {
+.topnav a.active {
     color: lightskyblue;
-  }
+}
   
   /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
+.topnav .icon {
     display: none;
-  }
+}
   
 
 
@@ -81,6 +107,11 @@ html, body{
     padding-right: 14px;
     padding-left: 14px;
     background-image: none;
+}
+.twitter{
+    animation-name: twitter-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 /*------NAVBAR END------*/
 /*------*/
@@ -111,21 +142,33 @@ html, body{
     color: white;
     background-image: none;
     background:transparent;
-    font-family: fantasy;
+    animation-name: title-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
 }
 .title-large{
     background: none;
     font-size: 60px;
+    letter-spacing: 2px;
 }
 .wallet-connect{
     position: absolute;
-    top:65%;
-    left:-1px;
+    top:70%;
+    left:-.5px;
     right: 5px;
     width: 100%;
-    background-image: none;
-    font-family: fantasy;
     font-size: 25px;
+    letter-spacing: 2px;
+    background-image: none;
+    background-color: transparent;
+    border:none;
+    color: white;
+    padding-top: 3px;
+}
+
+.wallet-connect:hover{
+    color: #FF9052;
 }
 
 /*------BODY END------*/
@@ -145,9 +188,12 @@ html, body{
     text-align: center;
     color: white;
     background-image: none;
-    font-family: fantasy;
     font-weight: bolder;
     margin-bottom: 50px;
+    letter-spacing: 2px;
+    animation-name: faq-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;    
 }
 
 .faq-collapse{
@@ -171,11 +217,14 @@ html, body{
     padding-right: 30px;
     border-top: 1px solid #01ffff;
     /*border:rgba(197, 206, 216, .05) 2px solid;*/
-  }
+    animation-name: faq-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
 
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
@@ -185,30 +234,30 @@ html, body{
     margin-right: 10%;
     color: white;
     border-bottom: 1px solid #01ffff;
+    text-align: left;
+}
 
-  }
+p{
+    background-image: none;
+    font-size: 20px;
+}
 
-  p{
-      background-image: none;
-      font-size: 20px;
-  }
-
-  .collapsible:after {
+.collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: white;
     float: right;
     margin-left: 5px;
     padding-top: 7px;
-  }
-  
-  .active:after {
+}
+
+.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+}
 
-  
-
-
+/*------FAQ END------*/
+/*------*/
+/*------ROADMAP------*/
 
 .roadmap-container{
       float: left;
@@ -222,9 +271,12 @@ html, body{
     background-image: none;
     text-align: center;
     color: white;
-    font-family: fantasy;
     font-weight: bolder;
     margin-bottom: 50px;
+    letter-spacing: 2px;
+    animation-name: roadmap-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .roadmap-title{
@@ -255,60 +307,70 @@ html, body{
     padding-right: 30px;
     border-top: 1px solid #FF9052;
     /*border:rgba(197, 206, 216, .05) 2px solid;*/
-  }
+    animation-name: roadmap-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
 
   
-  /* Style the collapsible content. Note: hidden by default */
-  .content-rm {
+/* Style the collapsible content. Note: hidden by default */
+.content-rm {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-image: none;
     background-color:transparent;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 25%;
     color: white;
     border-bottom: 1px solid #FF9052;
-    width: 73%;
+    width: 80%;
+    text-align: left;
+}
 
-  }
+p{
+    background-image: none;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
-  p{
-      background-image: none;
-      font-size: 20px;
-  }
-
-  .collapsible-rm:after {
+.collapsible-rm:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: white;
     float: right;
     margin-left: 5px;
     padding-top: 7px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+}
 
-  .land-image {
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.land-image {
     margin-left: 53%;
-    margin-top: 1%;
-    width: 45%;
+    margin-top: -0.25%;
+    width: 42%;
     /*position: absolute;
     top: 205%;
     left: 19%;
     transform: translate(-50%, -50%);*/
     background-image: none;
     text-align: center;
-  }
+}
 
-  .land{  
+.land{  
     text-align: center;
     width: 100%;
     background-image: none;
     margin: auto;
-  }
+}
+
+/*------ROADMAP END------*/
+/*------*/
+/*------SCREEN SIZING------*/
 @media screen and (max-width: 1600px) {
     .land {
         margin-top: 1%;
@@ -385,6 +447,7 @@ html, body{
       float: none;
       display: block;
       text-align: center;
+      padding-top: 10px;
     }
   }
 @media screen and (max-width: 900px) {
@@ -429,12 +492,15 @@ html, body{
         overflow: hidden;
         background-image: none;
         background-color:transparent;
-        margin-left: 10%;
+        margin-left: 20%;
         margin-right: 10%;
         color: white;
         border-bottom: 1px solid #FF9052;
-        width: 73%;
+        width: 80%;
     
+      }
+      p{
+        width: 80%;
       }
 }
 
