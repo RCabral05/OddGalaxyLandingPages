@@ -309,6 +309,9 @@ p{
     animation-duration: 10s;
     animation-iteration-count: infinite;*/
 }
+.collapsible-rm:hover{
+    color: #;
+}
 
   
 /* Style the collapsible content. Note: hidden by default */
@@ -560,6 +563,18 @@ p{
     .title{
         text-align: center;
         font-size: 20px;
+        transform: rotate(-20deg);
+        padding-top:10px;
+        transition-duration: 3s;
+    }
+    .image-text{
+        transition-duration: 2s;
+    }
+    .image-text:hover{
+        margin-top: -10px;
+    }
+    .title:hover{
+        transform: rotate(20deg);
     }
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -577,6 +592,7 @@ p{
       display: block;
       text-align: center;
       padding-top: 10px;
+      transform: rotate(-20deg);
     }
     .topnav a {
         color: white;
@@ -586,6 +602,7 @@ p{
         padding-left: 20px;
         padding-right: 20px;
         letter-spacing: 2px;
+
     }
     .twitter, .discord, .opensea{
         width:20%;
@@ -655,15 +672,147 @@ p{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .title{
-        background-color: blue;
+        text-align: center;
+        font-size: 27px;
+        transform: rotate(-20deg);
+        padding-top:10px;
+        transition-duration: 3s;
+    }
+    .title:hover{
+        transform: rotate(20deg);
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+      padding-top: 10px;
+      transform: rotate(-20deg);
+    }
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        background-image: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 2px;
+    }*/
+    .twitter, .discord, .opensea{
+        width:30px;
+        cursor: pointer;
+        padding-right: 7px;
+        padding-left: 7px;
+        background-image: none;
+    }
+    .logo{
+        padding-top: 20px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .title-large{
+        font-size: 38px;
+        transition-duration: 5s;
+    }
+    .image-text{
+        transition-duration: 2s;
+    }
+    .image-text:hover{
+        margin-top: -15px;
+    }
+    .wallet-connect{
+        font-size: 20px;
+    }
+
+    .faq, .roadmap{
+        font-size: 25px;
+    }
+    .collapsible-rm{
+        margin: 0%;
+        margin-left: 10%;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .collapsible{
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .roadmap-collapse{
+        margin: 0%;
+        width: 100%;
+        margin-right: 10%;
+    }
+    .content-rm{
+        margin: 0%;
+        width: 72.6%;
+        margin-left: 10%;
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-image: none;
+        background-color:transparent;
+        color: white;
+        border-bottom: 1px solid #FF9052;
+        text-align: left;
+    }
+    .collapsible, .collapsible-rm{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .wallet-connect{
+        font-size: 20px;
+    }
+    .land-image{
+        float: left;
+        margin:0;
+        margin-top:10px;
+        width: 100%;
     }
 }
-
+@media only screen and (max-width: 768px){
+    
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .title{
         background-color: green;
     }
+    .topnav{
+        /*border: 2px solid red;*/
+        float: left;
+        display: block;
+        width: 40%;
+        text-align: center;
+        margin-top: 25px;
+        background-image: none;
+        
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        background-image: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 2px;
+    }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
