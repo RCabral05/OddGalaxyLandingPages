@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <title>Odd Galaxy</title>
+    <style>
+        p{
+            font-family: Aclonica;
+            line-height: 1.6;
+        }
+        .wallet-connect{
+            font-family: Aclonica;
+        }
+    </style>
+</head>
+<body>
+    <!--INDEX PAGE-->
+    <div class="container">
+        <div class="navlogo">
+            <h1 class="title" style="font-family: Aclonica;">ODD GALAXY</h1>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#FAQ" style="font-family: Aclonica;">FAQ</a>
+            <a href="#ROADMAP" style="font-family: Aclonica;">ROADMAP</a>
+            <a href="#TAKE THE LEAP" style="font-family: Aclonica;">LEAP</a>
+            <a href="javascript:void(0);" class="icon" onclick="nav_collapse()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="socialmedia">
+            <img src="Images/twitter.png" class="twitter">
+            <img src="Images/discord.png" class="discord">
+            <img src="Images/opensea.png" class="opensea">
+        </div>
+        <div class="main">
+            <img class="logo" src="Images/logo_cut_new.png" alt="Logo">
+            <div class="image-text">
+                <h1 class="title-large" style="font-family: Aclonica;">EXPLORE THE UNKOWN GALAXY</h1>
+                <button class="wallet-connect" onclick="connectWallet()" astyle="font-family: Aclonica;">CONNECT WALLET</a>
+            </div>
+            <div class="connection">
+                <span class="dot"></span>
+                <p class="connected">NOT CONNECTED</p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function nav_collapse() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } 
+        else {
+            x.className = "topnav";
+        }
+    }
+
+    //COLLAPSE
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+    }
+
+    var coll_rm = document.getElementsByClassName("collapsible-rm");
+    var j;
+
+    for (j = 0; j < coll_rm.length; j++) {
+        coll_rm[j].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content_rm = this.nextElementSibling;
+            if (content_rm.style.display === "block") {
+                content_rm.style.display = "none";
+            } else {
+                content_rm.style.display = "block";
+            }
+        });
+    }
+
+    var con = document.getElementsByClassName("wallet-connect").addEventListener("click", connectWallet)
+    function connectWallet() {;
+
+    }
+</script>

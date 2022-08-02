@@ -223,7 +223,7 @@ html, body{
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-    padding: 0 18px;
+    padding:8px;
     display: none;
     overflow: hidden;
     background-image: none;
@@ -247,6 +247,9 @@ p{
     float: right;
     margin-left: 5px;
     padding-top: 7px;
+}
+.collapsible:hover{
+    color: #FF9052;
 }
 
 .active:after {
@@ -310,7 +313,7 @@ p{
     animation-iteration-count: infinite;*/
 }
 .collapsible-rm:hover{
-    color: #;
+    color: #00f7ff;
 }
 
   
@@ -605,7 +608,7 @@ p{
 
     }
     .twitter, .discord, .opensea{
-        width:20%;
+        width:20px;
         cursor: pointer;
         padding-right: 5px;
         padding-left: 5px;
@@ -620,11 +623,17 @@ p{
     .title-large{
         font-size: 25px;
     }
+    .image-text{
+        width: 100%;
+    }
     .wallet-connect{
         font-size: 13px;
     }
     .faq, .roadmap{
         font-size: 20px;
+    }
+    .content{
+        border-bottom: 1px solid white;
     }
     .collapsible-rm{
         margin: 0%;
@@ -652,7 +661,7 @@ p{
         background-image: none;
         background-color:transparent;
         color: white;
-        border-bottom: 1px solid #FF9052;
+        border-bottom: 1px solid white;
         text-align: left;
     }
     .collapsible, .collapsible-rm{
@@ -670,7 +679,7 @@ p{
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width:799px) {
     .title{
         text-align: center;
         font-size: 27px;
@@ -702,14 +711,14 @@ p{
     .topnav a {
         color: white;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 15px;
         background-image: none;
         padding-left: 20px;
         padding-right: 20px;
         letter-spacing: 2px;
-    }*/
+    }*
     .twitter, .discord, .opensea{
-        width:30px;
+        width: 20px;
         cursor: pointer;
         padding-right: 7px;
         padding-left: 7px;
@@ -717,13 +726,14 @@ p{
     }
     .logo{
         padding-top: 20px;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     .title-large{
         font-size: 38px;
         transition-duration: 5s;
+        width: 100%;
     }
     .image-text{
         transition-duration: 2s;
@@ -737,6 +747,9 @@ p{
 
     .faq, .roadmap{
         font-size: 25px;
+    }
+    .content{
+        border-bottom: 1px solid white;
     }
     .collapsible-rm{
         margin: 0%;
@@ -764,7 +777,7 @@ p{
         background-image: none;
         background-color:transparent;
         color: white;
-        border-bottom: 1px solid #FF9052;
+        border-bottom: 1px solid white;
         text-align: left;
     }
     .collapsible, .collapsible-rm{
@@ -783,13 +796,247 @@ p{
         width: 100%;
     }
 }
-@media only screen and (max-width: 768px){
-    
-}
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
     .title{
-        background-color: green;
+        transform: rotate(-20deg);
+        padding-top:10px;
+        transition-duration: 3s;
+        width:25%;
+    }
+    .title:hover{
+        transform: rotate(20deg);
+    }
+    .logo{
+        width: 60%;
+        margin: auto;
+    }
+    .topnav{
+        /*border: 2px solid red;*/
+        float: left;
+        display: block;
+        width: 40%;
+        text-align: center;
+        margin-top: 25px;
+        background-image: none;
+        
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        background-image: none;
+        padding-left: 19px;
+        padding-right: 19px;
+        letter-spacing: 2px;
+    }
+    .topnav a.icon{
+        display: none;
+    }
+    .twitter, .discord, .opensea{
+        width: 25px;
+        cursor: pointer;
+        padding-right: 7px;
+        padding-left: 7px;
+        background-image: none;
+    }
+    .title-large{
+        font-size: 40px;
+        transition-duration: 5s;
+        width: 100%;
+    }
+    .image-text{
+        transition-duration: 2s;
+    }
+    .image-text:hover{
+        margin-top: -15px;
+    }
+    .wallet-connect{
+        font-size: 22px;
+    }
+
+    .faq, .roadmap{
+        font-size: 25px;
+    }
+    .collapsible-rm{
+        margin: 0%;
+        margin-left: 10%;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .content{
+        border-bottom: 1px solid white;
+    }
+    .collapsible{
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .roadmap-collapse{
+        margin: 0%;
+        width: 100%;
+        margin-right: 10%;
+    }
+    .content-rm{
+        margin: 0%;
+        width: 72.6%;
+        margin-left: 10%;
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-image: none;
+        background-color:transparent;
+        color: white;
+        border-bottom: 1px solid white;
+        text-align: left;
+    }
+    .collapsible, .collapsible-rm{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .wallet-connect{
+        font-size: 20px;
+    }
+    .land-image{
+        float: left;
+        margin:0;
+        margin-top:10px;
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .title{
+        transform: rotate(-20deg);
+        padding-top:10px;
+        transition-duration: 3s;
+        width:25%;
+    }
+    .title:hover{
+        transform: rotate(20deg);
+    }
+    .logo{
+        width: 50%;
+        margin: auto;
+    }
+    .topnav{
+        /*border: 2px solid red;*/
+        float: left;
+        display: block;
+        width: 40%;
+        text-align: center;
+        margin-top: 25px;
+        background-image: none;
+        
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        background-image: none;
+        padding-left: 19px;
+        padding-right: 19px;
+        letter-spacing: 2px;
+    }
+    .topnav a.icon{
+        display: none;
+    }
+    .twitter, .discord, .opensea{
+        width: 25px;
+        cursor: pointer;
+        padding-right: 7px;
+        padding-left: 7px;
+        background-image: none;
+    }
+    .title-large{
+        font-size: 40px;
+        transition-duration: 5s;
+        width: 100%;
+    }
+    .image-text{
+        transition-duration: 2s;
+    }
+    .image-text:hover{
+        margin-top: -15px;
+    }
+    .wallet-connect{
+        font-size: 22px;
+    }
+
+    .faq, .roadmap{
+        font-size: 25px;
+    }
+    .content{
+        border-bottom: 1px solid white;
+    }
+    .collapsible-rm{
+        margin: 0%;
+        margin-left: 10%;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .collapsible{
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .roadmap-collapse{
+        margin: 0%;
+        width: 100%;
+        margin-right: 10%;
+    }
+    .content-rm{
+        margin: 0%;
+        width: 72.6%;
+        margin-left: 10%;
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-image: none;
+        background-color:transparent;
+        color: white;
+        border-bottom: 1px solid white;
+        text-align: left;
+    }
+    .collapsible, .collapsible-rm{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .wallet-connect{
+        font-size: 20px;
+    }
+    .land-image{
+        float: left;
+        margin:0;
+        margin-top:10px;
+        width: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width:1299px) {
+    .title{
+        transform: rotate(-20deg);
+        padding-top:10px;
+        transition-duration: 3s;
+        width:25%;
+        font-size: 40px;
+    }
+    .title:hover{
+        transform: rotate(20deg);
+    }
+    .logo{
+        width: 40%;
+        margin: auto;
     }
     .topnav{
         /*border: 2px solid red;*/
@@ -808,23 +1055,194 @@ p{
         text-decoration: none;
         font-size: 20px;
         background-image: none;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 19px;
+        padding-right: 19px;
         letter-spacing: 2px;
     }
-    
-}
+    .topnav a.icon{
+        display: none;
+    }
+    .twitter, .discord, .opensea{
+        width: 30px;
+        cursor: pointer;
+        padding-right: 7px;
+        padding-left: 7px;
+        background-image: none;
+    }
+    .title-large{
+        font-size: 60px;
+        transition-duration: 5s;
+        width: 100%;
+    }
+    .image-text{
+        transition-duration: 2s;
+    }
+    .image-text:hover{
+        margin-top: -15px;
+    }
+    .wallet-connect{
+        font-size: 45px;
+    }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .title{
-        background-color: pink;
+    .faq, .roadmap{
+        font-size: 25px;
+    }
+    .collapsible{
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .content{
+        border-bottom: 1px solid white;
+    }
+    .roadmap-collapse{
+        margin: 0%;
+        width: 50%;
+        margin-left: 10%;
+    }
+    .collapsible-rm{
+        margin: 0%;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .content-rm{
+        margin: 0%;
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-image: none;
+        background-color:transparent;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .collapsible, .collapsible-rm{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .wallet-connect{
+        font-size: 20px;
+    }
+    .land-image{
+        float: left;
+        margin:0;
+        margin-top:-5px;
+        width: 600px;
+        position: absolute;
+        margin-left: 55%;
+        margin-top: 100px;
     }
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
     .title{
-        background-color: yellow;
+        transform: rotate(-20deg);
+        padding-top:10px;
+        transition-duration: 3s;
+        width:25%;
+        font-size: 40px;
+    }
+    .title:hover{
+        transform: rotate(20deg);
+    }
+
+    .logo{
+        width: 40%;
+        margin: auto;
+    }
+    .topnav{
+        /*border: 2px solid red;*/
+        float: left;
+        display: block;
+        width: 40%;
+        text-align: center;
+        margin-top: 25px;
+        background-image: none;
+        
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        background-image: none;
+        padding-left: 19px;
+        padding-right: 19px;
+        letter-spacing: 2px;
+    }
+    .topnav a.icon{
+        display: none;
+    }
+    .twitter, .discord, .opensea{
+        width: 30px;
+        cursor: pointer;
+        padding-right: 7px;
+        padding-left: 7px;
+        background-image: none;
+    }
+    .title-large{
+        font-size: 70px;
+        transition-duration: 5s;
+        width: 100%;
+    }
+    .image-text{
+        transition-duration: 2s;
+    }
+    .image-text:hover{
+        margin-top: -15px;
+    }
+    .wallet-connect{
+        font-size: 50px;
+    }
+    .content{
+        border-bottom: 1px solid white;
+    }
+    .faq, .roadmap{
+        font-size: 25px;
+    }
+    .collapsible{
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .roadmap-collapse{
+        margin: 0%;
+        width: 50%;
+        margin-left: 10%;
+    }
+    .collapsible-rm{
+        margin: 0%;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .content-rm{
+        margin: 0%;
+        width: 74%;
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-image: none;
+        background-color:transparent;
+        color: white;
+        border-bottom: 1px solid white;
+        text-align: left;
+    }
+    .collapsible, .collapsible-rm{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .wallet-connect{
+        font-size: 20px;
+    }
+    .land-image{
+        float: left;
+        margin:0;
+        margin-top:-5px;
+        width: 700px;
+        position: absolute;
+        margin-left: 55%;
+        margin-top: 50px;
+        margin-right: 10%;
     }
 }

@@ -1,0 +1,169 @@
+*{
+    background-image: url(../Images/bg.png);   
+    margin: 0;
+}
+html{
+    width: 97%;
+    cursor:crosshair;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width:799px) {
+   
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 800px) {
+   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width:1299px) {
+    
+}
+@media only screen and (min-width: 1600px) {
+    .container{
+        width: 100%;
+        padding: 10px;
+        background-image: none;
+    }
+    .title{
+        width: 25%;
+        float: left;
+        margin: 0;
+        text-align: center;
+        color:white;
+        background-image: none;
+        margin-top:0.7%;
+        font-size: 35px;
+    }
+    .title:hover{
+        color: #FF9052;
+    }
+
+    .topnav{
+        width: 50%;
+        float: left;
+        margin: 0;
+        text-align: center;
+        margin-top: 1%;
+        background-image: none;
+    }
+    .topnav a{
+        color: #FF9052;
+        text-decoration: none;
+        font-size: 20px;
+        background-image: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 2px;
+    }
+    .topnav a:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .topnav a.icon{
+        display: none;
+    }
+    .socialmedia{
+        width: 25%;
+        float: left;
+        margin: 0;
+        text-align: center;
+        margin-top: 0.7%;
+        background-image: none;
+    }
+    .twitter, .discord, .opensea{
+        width:25px;
+        cursor: pointer;
+
+        padding-left: 30px;
+        background-image: none;
+        
+    }
+    .main{
+        width: 100%;
+        background-image: none;
+        margin-left: 2%;
+    }
+    .logo{
+        width: 40%;
+        animation: float 10s ease-in-out infinite;
+        background-image: none;
+        float: right;
+        margin-right: 10%;
+        margin-top:2%;
+    }
+    .image-text{
+        float: right;
+        width: 40%;
+        margin-top:15%;
+        margin-left: 10%;
+        color: white;
+        background-image: none;
+    }
+    .title-large{
+        background-image: none;
+        font-size: 60px;
+    }
+    .title-large:hover{
+        color:#FF9052;
+    }
+    .wallet-connect{
+        font-size: 18px;
+        margin-top: 60px;
+        color:white;
+        border-radius: 15px 50px;
+        border:2px solid #FF9052;
+        width: 250px;
+        height: 60px;
+    }
+    .wallet-connect:hover{
+        background: #FF9052;
+        cursor: pointer;
+    }
+    .connected{
+        font-size: 10px;
+        margin-left:12.5%;
+        color: white;
+        margin: 0;
+        padding-left: 10px;
+        float: left;
+    }
+    .dot{
+        height: 5px;
+        width: 5px;
+        background: red;
+        border-radius: 50%;
+        border: 2px solid red;
+        margin: 0;
+        margin-top:2.09px;
+        float: left;
+    }
+    .connection{
+        float: left;
+        margin-left: 12.5%;
+        margin-top: 5px;
+    }
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatex(0px);
+	}
+    50%{
+        transform: translate(80px);
+    }
+	100% {
+		transform: translatex(0px);
+	}
+}
+
