@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #10355f 0%, #090a0f 100%); /*#1b2735*/
   overflow: hidden;
 }
 body{
@@ -65,85 +65,118 @@ body{
     transform: translateY(-2000px);
   }
 }
-
-.title{
-  width: 22%;
-  margin: 0;
-  text-align: center;
-  color:white;
-  background-image: none;
-  margin-top:0.7%;
-  font-size: 45px;
-  float: left;
-}
-.title:hover{
-  color: #00f7ff;
-}
-
-.nav{
-  height: 75px;
-  margin:0;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-
-}
-.topnav{
-  width: 39%;
-  margin: 0;
-  background-image: none;
-  float: left;
-
-  height: 75px;
-}
-.portalNum{
-  color: white;
-  float: right;
-  font-size: 20px;
-  margin-top: 27px;
-  margin-right: -55px;
-}
-.portal{
-  width:150px;
-  margin:  0;
-  float: right;
-  margin-top: -18px;
-  margin-right: -40px;
-
-}
-.portalContainer{
-
-}
-.socialmedia{
-  width: 38%;
-  float: left;
-  margin: 0;
-  margin-top: 1.4%;
-  background-image: none;
-}
-.twitter, .discord, .opensea{
-  width:25px;
-  cursor: pointer;
-  float: left;
-  padding-left: 30px;
-  background-image: none;
-  
-}
-
-
-
 .container{
   width: 100%;
   margin:0;
   height: 100%;
 }
+.nav{
+  height: 75px;
+  margin:0;
+  position: absolute;
+  width: 100%;
+
+}
+.title{
+  width: 25%;
+  margin: 0;
+  text-align: center;
+  color:white;
+  background-image: none;
+  margin-top:1%;
+  font-size: 45px;
+  float: left;
+}
+.title:hover{
+  color: #FF9052;
+}
+
+.toplinks{
+  width: 37%;
+  float: left;
+  margin-top: 1.8%;
+  margin-left: -30px;
+}
+.toplinks a{
+  color: white;
+  margin-left:20px;
+  text-decoration: none;
+}
+.toplinks a:hover{
+  color: #FF9052;
+}
+
+.portalContainer{
+  float: left;
+  width: 39%;
+}
+
+.portalNum{
+  color: white;
+  font-size: 20px;
+  margin-top: 27px;
+  margin-right: -60px;
+  border: 2px solid #FF9052;
+  width: 70px;
+  text-align: center;
+  border-radius: 10px 50px;
+  float: right;
+}
+.portal{
+  width:150px;
+  margin:  0;
+  margin-top: -16px;
+  float: right;
+
+}
+.portalNum2{
+  color: white;
+  font-size: 20px;
+  margin-top: 27px;
+  margin-right: -60px;
+  border: 2px solid #FF9052;
+  width: 70px;
+  text-align: center;
+  border-radius: 10px 50px;
+  float: right;
+
+}
+.portal2{
+  width:150px;
+  margin:  0;
+  margin-right: -40px;
+  margin-top: -16px;
+  float: right;
+
+}
+.portalNum3{
+  color: white;
+  font-size: 20px;
+  margin-top: 27px;
+  margin-right: -60px;
+  border: 2px solid #FF9052;
+  width: 70px;
+  text-align: center;
+  border-radius: 10px 50px;
+  float: right;
+
+}
+.portal3{
+  width:150px;
+  margin:  0;
+  margin-right: -40px;
+  margin-top: -16px;
+  float: right;
+
+}
 
 .land{
 
   position: absolute;
-  width: 50%;
+  width: 58%;
   margin: 0;
-  margin-left:25%;
+  margin-left:21%;
+  margin-top:3.5%;
   z-index: 1;
 }
 
@@ -152,7 +185,7 @@ body{
     width: 100%;
     background-image: none;
     margin: auto;
-    margin-top:12%;
+    margin-top:0;
     animation: float 5s ease-in-out infinite;
 }
 
@@ -161,9 +194,12 @@ body{
 	0% {
 		transform: translatey(0px);
 	}
-	50% {
-		transform: translatey(20px);
+	25% {
+		transform: translatey(-18x);
 	}
+  50% {
+    transform: translatey(25px);
+  }
 	100% {
 		transform: translatey(0px);
 	}

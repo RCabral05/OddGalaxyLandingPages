@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <!--INDEX PAGE-->
+    <!--HOME PAGE-->
     <div class="container">
         <div class="navlogo">
             <h1 class="title" style="font-family: Aclonica;">ODD GALAXY</h1>
@@ -35,7 +35,7 @@
             </a>
         </div>
         <div class="socialmedia">
-            <img src="Images/twitter.png" class="twitter">
+            <a href="https://twitter.com/oddgalaxynft"><img src="Images/twitter.png" class="twitter"></a>
             <img src="Images/discord.png" class="discord">
             <img src="Images/opensea.png" class="opensea">
         </div>
@@ -57,6 +57,7 @@
 </html>
 
 <script>
+    import detectEthereumProvider from '@metamask/detect-provider';
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function nav_collapse() {
         var x = document.getElementById("myTopnav");
@@ -101,6 +102,18 @@
 
     var con = document.getElementsByClassName("wallet-connect").addEventListener("click", connectWallet)
     function connectWallet() {;
+        
+        console.log("Connect Wallet");
+        // This function detects most providers injected at window.ethereum
 
+        const provider = await detectEthereumProvider();
+
+        if (provider) {
+        // From now on, this should always be true:
+        // provider === window.ethereum
+        startApp(provider); // initialize your app
+        } else {
+        console.log('Please install MetaMask!');
+        }
     }
 </script>
