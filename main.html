@@ -15,7 +15,8 @@
                 <a href="#">Home</a>
                 <a href="#">$ODD</a>
                 <a href="#">Base</a>
-                <button id="connect-wallet" onclick="connectWallet()">Connect Wallet</button>
+                <button id="connect-wallet">Connect Wallet</button>
+                
             </div>
         </nav>
         <div class="main-container">
@@ -139,19 +140,33 @@
             </div>     
         </div>
         
-        <div class="roadmap-container">
-            
-        </div>
+        <!-- <div class="roadmap-container">
+            <h2>Account: <span class="showAccount"></span></h2>
+        </div> -->
 
     </div>
 </body>
 </html>
 
 <script>   
-    function connectWallet() {;
+
+    const connectionButton = document.getElementById("connect-wallet");
+    const walletID = document.getElementById("showAccount");
+
+    connectionButton.addEventListener("click", () =>{
+        if (typeof window.ethereum !== "undefined") {
+            console.log("MetaMask installed")
+            .request({ method: "eth_requestAccounts"})
+            .then((accounts) =>{
+                const get_accounts = get_accounts[0]
+                walletID.innerHTML = `wallet connected: ${get_accounts}`;
+            })
+        } else {
+            window.open("https://metamask.io/download/", "_blank");
+        }
+    });
         
-        console.log("Connect Wallet");
-    }
+    
 
     //COLLAPSE
     var coll = document.getElementsByClassName("collapsible");
